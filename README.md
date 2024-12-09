@@ -10,8 +10,7 @@ A web application that displays and filters HTTP status codes, allowing users to
 
 - **Interactive Search**: Quickly find status codes by number or description.  
 - **Light & Dark Mode**: Switch themes to match your vibe.  
-- **Responsive Design**: Looks awesome on any device.  
-- **Hacker-Inspired UI**: Because who doesn’t love a little cyberpunk aesthetic?  
+- **Responsive Design**: Looks awesome on any device.
 
 ---
 
