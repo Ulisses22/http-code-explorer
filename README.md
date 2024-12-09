@@ -17,7 +17,7 @@ A web application that displays and filters HTTP status codes, allowing users to
 
 ## 🎨 Visuals
 
-![HTTP Code Explorer Screenshot](https://via.placeholder.com/800x400.png?text=Insert+Screenshot+Here)
+![HTTP Code Explorer Screenshot](https://github.com/Ulisses22/http-code-explorer/blob/5b9ca44fa22ea22581012d9a82463af6a5d7905a/screenshot.png)
 
 > *"A clean interface for messy developers."*
 
