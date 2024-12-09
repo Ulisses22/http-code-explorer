@@ -1,0 +1,279 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+/* Root Variables */
+:root {
+    --background-color: #1e1e1e;
+}
+
+.light-theme {
+    --background-color: #ffffff;
+}
+
+.dark-theme {
+    --background-color: #1e1e1e;
+    color: #fff;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #fff;
+    text-align: center;
+    animation: gradientShift 10s ease-in-out infinite;
+    margin-bottom: 50px;
+    background-color: var(--background-color);
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Header */
+header {
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1000;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.by {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+.by i {
+    font-size: x-large;
+    margin-right: 5px;
+}
+
+/* Status Container and Cards */
+.status-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.status-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    height: 150px;
+    width: 220px;
+    max-width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.status-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Card Elements */
+.status-card h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.status-type {
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+.status-message {
+    font-size: 0.7rem;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+.status-description {
+    display: none;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+/* Hover Effects */
+.status-card:hover {
+    transform: translateY(-5px);
+}
+
+.status-card:hover .status-description {
+    display: block;
+}
+
+.status-card:hover .status-type,
+.status-card:hover .status-code,
+.status-card:hover .status-message {
+    display: none;
+}
+
+/* Status-Specific Colors */
+.informational {
+    background-color: rgba(3, 169, 244, 0.9);
+}
+
+.success {
+    background-color: rgba(56, 189, 128, 0.9);
+}
+
+.redirection {
+    background-color: rgba(255, 193, 7, 0.9);
+}
+
+.client-error {
+    background-color: rgba(244, 67, 54, 0.9);
+}
+
+.server-error {
+    background-color: rgba(233, 30, 99, 0.9);
+}
+
+/* Text Shadow for Legibility */
+.status-card h2,
+.status-card p,
+.status-card span {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Search Input */
+.search-container input {
+    text-align: center;
+    color: white;
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #444;
+    background-color: transparent;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.search-container input:focus {
+    outline: none;
+}
+
+/* Links */
+a {
+    text-decoration: underline;
+}
+
+/* 404 Error Styling */
+.error-404 {
+    text-align: center;
+    color: #fff;
+    background-color: #333;
+    border-radius: 10px;
+    height: 150px;
+    width: 220px;
+}
+
+.error-404 h1 {
+    font-size: 50px;
+    margin: 0;
+    color: red;
+}
+
+.error-404 p {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+/* Disable Text Selection */
+.magic {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Theme Toggle */
+#theme-toggle {
+    padding: 3px 5px;
+    font-weight: bold;
+    font-size: 14px;
+    border: 2px solid yellow;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    z-index: 1000;
+}
+
+#theme-toggle:hover {
+    background-color: yellow;
+    color: #000;
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+#theme-toggle:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}

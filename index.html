@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTTP Status Codes</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- SweetAlert2 Library -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body class="magic dark-theme">
+  <!-- Theme Toggle Button -->
+  <button id="theme-toggle">
+    <i id="theme-icon" class="fas fa-lightbulb"></i>
+  </button>
+
+  <div class="main">
+    <!-- Main Content -->
+    <main>
+      <!-- Search Input -->
+      <div class="search-container">
+        <input type="text" id="search" placeholder="Search by code (2XX) or key words..." autocomplete="off">
+      </div>
+      <!-- Status Cards -->
+      <div class="status-container">
+        <!-- Cards will be dynamically generated with JavaScript -->
+      </div>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <a href="https://github.com/Ulisses22" target="_blank" class="by">
+      <i class="fab fa-github"></i>
+    </a>
+  </footer>
+
+  <!-- JavaScript File -->
+  <script src="script.js"></script>
+</body>
+
+</html>
