@@ -12,6 +12,7 @@ A web application that displays and filters HTTP status codes, allowing users to
 - **Light & Dark Mode**: Switch themes to match your vibe.  
 - **Responsive Design**: Looks awesome on any device.
 
+More features coming soon.
 ---
 
 ## 🎨 Visuals
